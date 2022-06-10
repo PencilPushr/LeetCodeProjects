@@ -43,6 +43,7 @@ std::vector<int> TwoSum::twoSum(std::vector<int> &nums, int target) {
             result.push_back(map.find(diff)->second);
             return result;
         }else{
+            //if the value doesn't exist in the hashmap add it
             map[nums[i]] = i;
         }
     }
