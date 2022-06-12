@@ -36,7 +36,9 @@ std::vector<int> TwoSum::twoSum(std::vector<int> &nums, int target) {
     const u_int16_t size = nums.size();
 
     for (int i = 0; i < size; ++i) {
+        //if we have a target 5, at we find 3, now we need 2, we check if the difference exists in the map.
         int diff = target - map[i];
+
             //map.count(diff) is more understandable
         if(map.find(diff) != map.end()){ //checks if the value exists in hashmap
             result.push_back(i);
