@@ -31,5 +31,5 @@ vector<int> TwoSum2::twoSum(vector<int> &numbers, int target) {
     }
 
     //because we return the indices, we need to add 1 to both values.
-    return {i, j};
+    return {i+1, j+1};
 }

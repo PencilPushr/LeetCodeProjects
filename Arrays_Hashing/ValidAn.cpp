@@ -17,7 +17,6 @@ bool ValidAn::isAnagram(std::string s, std::string t) {
     //we can skip an if+else block by return false if the length is not the same
     if (s.length() != t.length()) return false;
 
-
     for (int i = 0; i < s.length(); ++i) {
         count[s[i]]++;
         count[t[i]]--;
@@ -31,5 +30,4 @@ bool ValidAn::isAnagram(std::string s, std::string t) {
         }
     }
     return true;
-
 }
