@@ -6,6 +6,7 @@
 #define LEETCODEPROJECTS_MINCOSTCS_H
 
 #include <vector>
+#include <iostream>
 
 using std::vector;
 
